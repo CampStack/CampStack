@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crystal Hunters</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body onload="init()">
+    <h1>Crystal Hunters</h1>
+    <div class="crystal-count">
+      Crystals: <span id="crystalCount">0</span>
+    </div>
+    <div>
+      <button type="button" class="dig-btn" onclick="dig()">Dig!</button>
+    </div>
+
+    <div class="container">
+      <div class="left-column">
+        <!-- SHOP SECTION -->
+        <div>
+          <div class="shop-title">
+            Shop
+          </div>
+
+          <div>
+            <button id="buySmallDigger" type="button" class="buy-button" onclick="buySmallDigger()" disabled>Small Digging Machine ($<span id="smallDiggerCost">25</span>)</button> x <span id="smallDiggerCount">0</span>
+          </div>
+
+          <div>
+            <button id="buyLargeDigger" type="button" class="buy-button" onclick="buyLargeDigger()" disabled>Large Digging Machine ($<span id="largeDiggerCost">200</span>)</button> x <span id="largeDiggerCount">0</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="middle-column">
+        <!-- UPGRADES SECTION -->
+        <div>
+          <div class="shop-title">
+            Upgrades
+          </div>
+
+          <div>
+            <button id="upgradeClick" type="button" class="buy-button" onclick="upgradeClick()" disabled>Upgrade Click ($800)<br/>Double Crystals from Clicks </button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="right-column">
+        <!-- EMPTY FOR NOW -->
+      </div>
+
+    </div>
+
+
+  </body>
+  <script src="js/main.js"></script>
+</html>
